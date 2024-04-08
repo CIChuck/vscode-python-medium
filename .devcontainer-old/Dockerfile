@@ -1,7 +1,7 @@
-FROM python:3.10
+ARG PYTHON_VER="3.10"
+FROM python:$PYTHON_VER
 
 ARG PYTHON_ENV=my_env
-
 ENV PYTHON_ENV=$PYTHON_ENV
 
 RUN mkdir requirements
